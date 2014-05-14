@@ -20,9 +20,7 @@ import com.jeecms.common.web.springmvc.RealPathResolver;
 import com.jeecms.core.manager.DbFileMng;
 import com.jeecms.core.web.WebErrors;
 
-/**
- * @author Tom
- */
+
 public class AbstractUpload {
 	protected WebErrors validate(String filename, MultipartFile file,
 			HttpServletRequest request) {
