@@ -62,7 +62,7 @@ function optPriority() {
 	<@p.column code="global.operate" align="center">
 		<a href="v_edit.do?id=${cmsModel.id}" class="pn-opt"><@s.m "global.edit"/></a> | <#rt/>
 		<a href="../item/v_list.do?modelId=${cmsModel.id}&isChannel=true" class="pn-opt"><@s.m "cmsModel.modelChannel"/></a> | <#rt/>
-		<a<#if cmsModel.hasContent> href="../item/v_list.do?modelId=${cmsModel.id}&isChannel=false" class="pn-opt"<#else> disabled="disabled" class="disabled pn-opt"</#if>><@s.m "cmsModel.modelContent"/></a> | <#rt/>
+		<a><#if cmsModel.hasContent> href="../item/v_list.do?modelId=${cmsModel.id}&isChannel=false" class="pn-opt"<#else> disabled="disabled" class="disabled pn-opt"</#if>><@s.m "cmsModel.modelContent"/></a> | <#rt/>
 		<a href="o_delete.do?ids=${cmsModel.id}" class="pn-opt" onclick="if(!confirm('<@s.m "global.confirm.delete"/>')) {return false;}"><@s.m "global.delete"/></a><#t/>
 	</@p.column><#t/>
 </@p.table>

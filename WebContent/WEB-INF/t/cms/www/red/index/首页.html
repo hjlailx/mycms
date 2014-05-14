@@ -280,7 +280,7 @@ $(function() {
                 <div class="downContent2">
                 	<ul>
                         [@cms_content_list count='18' orderBy='4' titLen='8' channelId='9' channelOption='1']
-                        [#list tag_list as a][#if 2<a_index]
+                        [#list tag_list as a][#if 2<a_index]>
                         <li><a href="${a.url}" title="${a.title}" target="_blank">[@text_cut s=a.title len=titLen /]</a></li>
                         [/#if]
                         [/#list]

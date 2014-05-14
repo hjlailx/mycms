@@ -160,7 +160,7 @@ function hideImage(a) {
 		<#if resource.directory>
 		<a href="v_list.do?root=${resource.name}">${resource.filename}</a>
 		<#else>
-		<a href="${base+resource.name}"<#if resource.image> onmouseover="showImage(this)" onmouseout="hideImage(this)"</#if> target="_blank">${resource.filename}</a>
+		<a href="${base+resource.name}"><#if resource.image> onmouseover="showImage(this)" onmouseout="hideImage(this)"</#if> target="_blank">${resource.filename}</a>
 		</#if>
 	</@p.column><#t/>
 	<@p.column code="resource.size" align="right">${resource.size} KB</@p.column><#t/>
